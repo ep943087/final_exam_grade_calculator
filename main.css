@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0757a1;
+    font-family: monospace;
+}
+
+
+hr{
+    padding: 0;
+    margin: 0;
+}
+
+.grades{
+    list-style-type: none;
+}
+
+.main-header{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.1)50%);
+    background-color: white;
+    width: 50%;
+    border: 3px solid black;
+    margin: 25px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-header > h1{
+    padding: 0;
+    margin: 0;
+}
+
+.app{
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.1)50%);
+    width: 50%;
+    border: 3px solid black;
+    margin: 0 auto;
+    height: 600px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.app > h2{
+    position: relative;
+    left: 5%;
+}
+
+.final_grade{
+    margin: 25px auto;
+    width: 50%;
+    padding: 10px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.1)50%);
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.final_grade > p{
+    padding: 0;
+    display: inline;
+}
+
+.final_grade > button{
+    width: 8%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1387aa;
+    color: white;
+    font-family: inherit;
+}
+
+.final_grade > button:active{
+    background-color: white;
+    color: #1387aa;
+}
+
+#final_grade_input{
+    padding: 10px;
+    font-size: 1em;
+    width: 70%;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.input-field{
+    padding: 10px;
+    font-size: 1em;
+    width: 90%;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    height: 90%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.grade_item{
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 25px;
+    border-top: 3px solid black;
+}
+
+.grade_item__field > p, .grade_item__field > input{
+    display: block;
+    margin: 10px auto;
+}
+
+.grade_item__field > p{
+    position: relative;
+    left: 5%;
+}
+
+@media(max-width: 1300px) {
+    .app{
+        width: 80%;
+    }
+    .main-header{
+        width: 80%;
+    }
+    .final_grade{
+        width: 80%;
+    }
+    body{
+        background-color: aquamarine;
+    }
+}
+
+@media(max-width: 600px){
+    body{
+        background-color: red;
+    }
+    .main-header{
+        width: 100%;
+    }
+    .app{
+        width: 100%;
+    }
+    .final_grade{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
